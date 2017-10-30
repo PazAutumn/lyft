@@ -1,3 +1,5 @@
+/*Clases reutilizables*/
+
 .masonry {
   	column-count: 1;
   	column-gap: 1em;
@@ -7,18 +9,26 @@
   	text-transform: uppercase;
 }
 
+/*Esta clase me apareció no se de adonde en el html y me daba un margen que no existía, así que le di un margen negativo y desapareció*/
+
 .fa-events-icons-ready {
 	margin-top: -20px;
 }
 
+/*ESTILOS DE MI PROYECTO*/
+
+
+/*BODY DE LA PÁGINA*/
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0 auto;
 }
 
-/*
- * Estilos de tu proyecto
- */
+
+
+/*BARRA SUPERIOR*/
+
+
 
 .container {
 	position: fixed;
@@ -31,37 +41,41 @@ body {
 #logo {
 	width: 64px;
 	height: 45px;
-	margin-top: 40px;
+	margin-top: 40px;     		/*Imagen del logo de lyft*/
 	margin-left: 60px;
 	float: left;
 }
-
 .option {
 	display: inline-block;
   	margin: 0 20px;
-	text-decoration: none;
-	color: #fff;
+	text-decoration: none;    	/*Botones de opción de la barra superior*/
+	color: #fff;	
 	font-weight: 300;
 	font-size: 19px;
 }
 
 .one {
-	margin-left: 668px;
+	margin-left: 668px;      	/*Primer botón (Drive) */
 	margin-top: 48px;
 }
 
 .four {
 	border: 1px solid white;
-	padding: 10px 20px;
+	padding: 10px 20px;         /*Cuarto botón  (Log in)*/
 	border-radius: 10px;
 }
+ 
+
+
+/*PRIMERA SECCIÓN*/
+
 
 
 .background {
 	width: 100%;
 	height: 758px;
-	background-image: url(../assets/images/hero.gif);
-	background-size: 100%;
+	background-image: url(../assets/images/hero.gif);  
+	background-size: 100%;		/*Fondo de la sección*/
 	background-color: #180F2E;
 	background-repeat: no-repeat;
 }
@@ -70,7 +84,7 @@ body {
 	width: 445px;
 	height: auto;
 	background-color: #fff;
-	color: #352384;
+	color: #352384;				/*Cuadro de inscripción*/
 	margin-top: 120px;
 	padding: 60px;
 	float: right;
@@ -79,19 +93,19 @@ body {
 
 .signup h1 {
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: 500;			/*Encabezado de la sección*/
 	margin: 0px;
 }
 
 .signup p {
 	margin: 0;
-	font-weight: 500;
+	font-weight: 500;			/*párrafo de la sección*/
 }
 
 .phone {
   	width: 100%;
 	height: auto;
-	border: 0;
+	border: 0;					/*input para ingresar el número de teléfono*/
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
 	margin: 30px 0;
@@ -99,50 +113,61 @@ body {
 }
 
 .driver {
-	display: inline-block;
+	display: inline-block;		/*Botón become a driver*/
 	margin: 10px 0;
 }
 
 .driver:hover {
-	cursor: pointer;
+	cursor: pointer;			/*Hover de become a driver*/
 }
 
 .driver p {
 	background-color: #FF00BF;
 	border: 1px solid #FF00BF;
-	font-weight: 400;
+	font-weight: 400;			/*texto del botón*/
 	color: white;
 	padding: 10px;
 	border-radius: 10px;
 }
 
 .driver a {
-	color: gray;
+	color: gray;				/*Opción sign up to drive*/
 	margin-left: 10px;
 }
 
 .little h6{
 	line-height: 20px;
 	font-weight: 300;
-	font-size: 10px;
+	font-size: 10px;			/*Texto debajo del input*/
 	color: gray;
 	margin: 10px;
 }
 
-#section-two {
-	background: linear-gradient(#691B83, #76278F, #2B1E66);
+.little h6 a {
+	text-decoration: none;
+	color: gray;
 }
+
+
+
+/*SEGUNDA SECCIÓN*/
+
+
+
+#section-two {
+	background: linear-gradient(#691B83, #76278F, #2B1E66);  
+}								/*Fondo en degradé*/
 
 .contentContainer {
 	width: 550px;
-	height: 515px;
+	height: 515px;				/*Contenedor de cuadros de texto e imagen*/
 	padding: 60px;
 }
 
 .content {
 	width: 300px;
 	height: auto;
-	padding: 10px 40px;
+	padding: 10px 40px;			/*Cuadros de texto*/
 	display: inline-block;
 	color: white;
 }
@@ -150,23 +175,29 @@ body {
 .smart {
 	width: 550px;
 	height: 515px;
-	margin: -530px 600px;
+	margin: -530px 600px;		/*Imagen de teléfono celular*/
 	float: left;
 }
+
+
+
+/*TERCERA SECCIÓN*/
+
+
 
 #section-three {
 	width: 100%;
 	height: 1800px;
-	background-color: white;	
+	background-color: white;	/*Fondo de la tercera sección*/
 }
 
 .box {
-	padding: 30px;
+	padding: 30px;				/*Cajas que contienen texto o video*/
 	float: left;
 }
 
 .box h6,h2 {
-	line-height: 0;
+	line-height: 0;				/*Texto de las cajas*/
 }
 
 .box p {
@@ -175,50 +206,56 @@ body {
 
 iframe {
 	margin: 0;
-	width: 965px;
+	width: 965px;				/*videos*/
 	height: 600px;
 }
 
 .box.uno,.cuatro,.cinco {
 	width: 320px;
-	height: 540px;
+	height: 540px;				/*Dimensiones cajas de texto*/
 }
 
 .box.dos,.tres,.seis {
 	width: 800px;
-	height: 300px;
+	height: 300px;				/*Dimensiones cajas de video*/
 }
 
 .dos {
-	padding: 0;	
+	padding: 0;					/*caja dos (video)*/
 }
 .tres {
 	padding: 0;
-	clear: left;
+	clear: left;				/*caja tres (texto)*/
 }
 
 .cuatro {
-	margin-left: 163px;
+	margin-left: 163px;			/*caja cuatro (video)*/
 }
 
 .cinco {
-	clear: left;
+	clear: left;				/*caja cinco (texto)*/
 }
 
 .seis {
-	padding: 0;
+	padding: 0;					/*caja seis (video)*/
 }
+
+
+
+/*FOOTER DE LINKS INFORMATIVOS Y BOTONES DE APPSTORE*/
+
+
 
 .footer {
 	width: 100%;
-	height: 400px;
+	height: 400px;				
   	color:#fff;
- 	background-color: #333447;
+ 	background-color: #333447;	/*fondo del footer*/
 }
 
 .bottom {
 	margin-top: 20px;
-	margin-left: 20px;
+	margin-left: 20px;			/*contenedor de las cajas con opciones*/
 	float: left;
 	padding: 0 30px;
 }
@@ -235,13 +272,13 @@ iframe {
 
 .a {
 	width: 200px;
-	height: 170px;
+	height: 170px;				/*Formato de opciones*/
 	margin-bottom: 33px;
 
 }
 
 .a ul {
-	line-height: 30px;
+	line-height: 30px;			
 	padding: 0;
 }
 
@@ -260,7 +297,7 @@ iframe {
 }
 
 img {
-	width: 135px;
+	width: 135px;				/*Formato imágenes de appstore*/
 	height: auto;
 }
 
@@ -268,21 +305,29 @@ img:hover {
 	cursor: pointer;
 }
 
-.buttons {
+
+
+
+/*FOOTER ICONOS DE REDES SOCIALES*/
+
+
+
+
+.icons {
 	width: 100%;
   	height: 60px;
   	padding-top: 1px;
-  	background-color: #333447;
+  	background-color: #333447;	/*Fondo y formato del footer*/
   	text-align: center;
   	color: white;
   	font-family: sans-serif;
 }
 
-.buttons ul {
-	padding: 0;
+.icons ul {
+	padding: 0;					/*Formato de los iconos*/
 }
 
-.buttons ul li {
+.icons ul li {
 	margin: -25px 35px;
 	list-style: none;
 	display: inline-block;
@@ -291,7 +336,7 @@ img:hover {
 	border-radius: 100%
 }
 
-.buttons ul li a{
+.icons ul li a{
 	font-size: 18px;
 	text-decoration: none;
 	text-align: center;
@@ -300,15 +345,21 @@ img:hover {
 
 hr {
 	width: 600px;
-	height: 2px;
+	height: 2px;				/*Línea bajo los iconos*/
 	color: white;
 	text-align: center;
 }
 
+
+
+/*FOOTER QUE CONTIENE EL COPYRIGTH*/
+
+
+
 .copyrigth {
     height: 60px;
   	padding-top: 1px;
-  	background-color: #333447;
+  	background-color: #333447;	/*Formato de barra de copyrigth*/
   	text-align: center;
   	color: white; 
 }
